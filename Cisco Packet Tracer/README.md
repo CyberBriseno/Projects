@@ -10,5 +10,3 @@ This project serves as a comprehensive showcase of my current level of proficien
 - VLAN Configuration
 - Access Control Lists (ACL)
 - Network Address Translation (NAT)
-
-[Topology]
