@@ -10,3 +10,6 @@ This project serves as a comprehensive showcase of my current level of proficien
 - VLAN Configuration
 - Access Control Lists (ACL)
 - Network Address Translation (NAT)
+
+## Replication
+To replicate this network I have a PDF in this repository a topology of the network and directions.
