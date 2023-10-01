@@ -3,7 +3,7 @@
 Welcome to my Projects repository! Here you'll find a collection of projects that demonstrate my skills in various areas of Information Technology, especially in Cybersecurity and Networking.
 
 ## Table of Contents
-- **[Cisco Packet Tracer Project](Cisco%20Packet%20Tracer/)**
+- [Cisco Packet Tracer Project](Cisco%20Packet%20Tracer/)
 - [Future Projects](#future-projects)
 
 ---
