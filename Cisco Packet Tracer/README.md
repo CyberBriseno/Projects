@@ -1,5 +1,4 @@
 # Cisco Network
---
 
 ## Objective
 This project serves as a comprehensive showcase of my current level of proficiency in networking. The entire network is designed and implemented using Cisco Packet Tracer with the aim of enabling effective network communication via ICMP packets.
