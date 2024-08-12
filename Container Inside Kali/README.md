@@ -96,7 +96,7 @@ Before creating a VM, you need to download the Kali Linux ISO.
     - Skip proxy setup unless needed.
     - Use TAB to highlight **<Continue>** and press Enter to launch Kali.
 
-![Setting up Kali](./screenshots/4.%20Setting%20up%20Kali/kali-setup.png)
+![Setting up Kali](./screenshots/4.%20Setting%20up%20Kali/)
 
 ## Step 5: Configuring Kali
 
