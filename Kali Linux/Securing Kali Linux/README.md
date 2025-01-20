@@ -30,9 +30,9 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 
 - Install ufw (Uncomplicated Firewall): ```sudo apt install ufw -y```
 - Enable and configure basic rules: 
-    -```sudo ufw default deny incoming```
-    -```sudo ufw default allow outgoing```
-    -```sudo ufw enable```
+    ```sudo ufw default deny incoming```
+    ```sudo ufw default allow outgoing```
+    ```sudo ufw enable```
 - (Optional) Customize rules for specific services (e.g., SSH): ```sudo ufw allow ssh```
 
 ## Step 3: Strengthen SSH
