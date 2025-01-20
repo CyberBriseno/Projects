@@ -5,10 +5,10 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 ## Table of Contents
 
 - [Update and Upgrade System](#step-1-update-and-upgrade-system)
-- [Configure a Firewall]()
-- [Strengthen SSH]()
-- [Install Intrusion Detection Tools]()
-- [Minimize the Attack Surface]()
+- [Configure a Firewall](#step-2-configure-a-firewall)
+- [Strengthen SSH](#step-3-strengthen-ssh)
+- [Install Intrusion Detection Tools](#step-4-install-intrusion-detection-tools)
+- [Minimize the Attack Surface](#step-5-minimize-the-attack-surface)
 
 ## Prerequisites
 
