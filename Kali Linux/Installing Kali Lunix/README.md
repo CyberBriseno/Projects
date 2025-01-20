@@ -4,12 +4,12 @@ This project provides step-by-step instructions for setting up a Docker environm
 
 ## Table of Contents
 
-- [Downloading Hyper-V](#downloading-hyper-v)
-- [Downloading Kali](#downloading-kali)
-- [Installing the VM](#installing-the-vm)
-- [Setting up Kali](#setting-up-kali)
-- [Configuring Kali](#configuring-kali)
-- [Installing Docker](#installing-docker)
+- [Downloading Hyper-V](#step-1-downloading-hyper-v)
+- [Downloading Downloading Kali Linux ISO](#step-2-downloading-kali)
+- [Installing the VM](#step-3-installing-the-vm)
+- [Setting up Kali](#step-4-setting-up-kali)
+- [Configuring Kali](#step-5-configuring-kali)
+
 
 ## Step 1: Downloading Hyper-V
 
