@@ -1,6 +1,6 @@
 # Securing Kali Linux in Windows
 
-This guide provides concise, methodical instructions for safeguarding your Kali Linux VM running on Windows. Follow each step meticulously to fortify your environment and ensure optimal protection.
+This guide is to walk you through on securing your Kali Linux machine.
 
 ## Table of Contents
 
@@ -21,59 +21,73 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 
 ## Step 1: Update and Upgrade System
 
-- **Open Terminal** in Kali.
-- **Execute** the following command to refresh and upgrade all packages: 
+1. **Open Terminal** in Kali.
+2. **Execute** the following command to refresh and upgrade all packages: 
     ```bash
     sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
     ```
-- **Remove** redundant packages once upgrade completes: 
+3. **Remove** redundant packages once upgrade completes: 
     ```bash
     sudo apt autoremove -y && sudo apt clean
     ```
-- **Reboot** the VM to finalize changes:
+4. **Reboot** the VM to finalize changes:
     ```bash 
     sudo reboot
     ```
 
 ## Step 2: Configure a Firewall
 
-- Install ufw (Uncomplicated Firewall) to manage inbound/outbound traffic: 
+1. **Install UFW** (Uncomplicated Firewall) to manage inbound/outbound traffic: 
     ```bash
     sudo apt install ufw -y
     ```
-- Enable and configure basic rules: 
+2. **Set default rules** for incoming and outgoing connections: 
     ```bash
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
     sudo ufw enable
     ```
-- (Optional) Customize rules for specific services (e.g., SSH:
+3. *(Optional)* **Allow** services, such as SSH:
     ```bash
     sudo ufw allow ssh
     ```
 
 ## Step 3: Strengthen SSH
 
-- Edit SSH configuration: 
-    - sudo nano /etc/ssh/sshd_config
-- Disable root login and password authentication:
-    - PermitRootLogin no 
-    - PasswordAuthentication no
-- Use key-based authentication whenever feasible:
-- Generate a key pair on your local machine with ssh-keygen.
-- Copy the public key to the VM using ssh-copy-id.
-- Restart SSH: 
-    - ```sudo systemctl restart ssh```
+1. **Open** SSH configuration file: 
+    ```bash
+    sudo nano /etc/ssh/sshd_config
+    ```
+2. **Disable** root login and password authentication by editing these lines:
+    ```bash
+    PermitRootLogin no
+    PasswordAuthentication no
+    ```
+3. **Use key-based authentication** to enhance scecurity:
+    - Generate a key pair on your local machine:
+    ```bash
+    ssh-keygen.
+    ```
+    - Copy the public key to your Kali VM:
+    ```bash
+    ssh-copy-id.
+    ```
+4. **Restart SSH** to apply changes:
+    ```bash
+    sudo systemctl restart ssh
+    ```
 
 ## Step 4: Install Intrusion Detection Tools
 
-- Consider installing fail2ban: 
-    - ```sudo apt install fail2ban -y```
-- Configure fail2ban:
-    - ```sudo nano /etc/fail2ban/jail.conf``` to tailor settings (like bantime, maxretry).
-- Restart fail2ban: 
+1. Consider installing fail2ban: 
+    ```bash
+    sudo apt install fail2ban -y
+    ```
+2. Configure fail2ban:
+    ```sudo nano /etc/fail2ban/jail.conf``` to tailor settings (like bantime, maxretry).
+3. Restart fail2ban: 
     - ```sudo systemctl restart fail2ban```
-- (Optional) Incorporate IDS/IPS solutions such as Snort or Suricata.
+4. *(Optional)* Incorporate IDS/IPS solutions such as Snort or Suricata.
 
 ## Step 5: Minimize the Attack Surface
 
