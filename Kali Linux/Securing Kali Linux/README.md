@@ -23,7 +23,9 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 
 - **Open Terminal** in Kali.
 - **Execute** the following command to refresh and upgrade all packages: 
-    - ```sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y```
+    ```bash
+    sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
+    ```
 - **Remove** redundant packages once upgrade completes: 
     - ``` sudo apt autoremove -y && sudo apt clean```
 - **Reboot** the VM to finalize changes:
@@ -31,7 +33,7 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 
 ## Step 2: Configure a Firewall
 
-- Install ufw (Uncomplicated Firewall): 
+- Install ufw (Uncomplicated Firewall) to manage inbound/outbound traffic: 
     - ```sudo apt install ufw -y```
 - Enable and configure basic rules: 
     - ```sudo ufw default deny incoming```
