@@ -105,37 +105,4 @@ Before creating a VM, you need to download the Kali Linux ISO.
     ```bash
     sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt clean
     ```
-
 ![Configuring Kali](./screenshots/5.%20Configuring%20Kali/)
-
-## Step 6: Installing Docker
-
-1. **Install Docker**:
-    - In the terminal, paste or type the following:
-    ```bash
-    sudo apt update && \
-    sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y && \
-    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
-    echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null && \
-    sudo apt update && \
-    sudo apt install docker-ce docker-ce-cli containerd.io -y && \
-    sudo systemctl start docker && sudo systemctl enable docker
-    ```
-    - Press Enter to execute the command.
-
-2. **Verify Docker Installation**:
-    - In the terminal, paste or type the following:
-    ```bash
-    sudo docker run hello-world
-    ```
-    - You should see a confirmation message from Docker.
-
-3. **Launching and connecting to a container**:
-    - In the terminal, paste or type the following:
-    ```bash
-    sudo docker pull ubuntu
-    sudo docker run -it ubuntu bash
-    ```
-    - Press Enter to pull the Ubuntu image and start a container with an interactive bash shell.
-
-![Installing Docker](./screenshots/6.%20Installing%20Docker/)
