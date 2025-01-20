@@ -44,11 +44,7 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 - Enable and configure basic rules: 
     ```bash
     sudo ufw default deny incoming
-    ```
-    ```bash
     sudo ufw default allow outgoing
-    ```
-    ```bash
     sudo ufw enable
     ```
 - (Optional) Customize rules for specific services (e.g., SSH:
