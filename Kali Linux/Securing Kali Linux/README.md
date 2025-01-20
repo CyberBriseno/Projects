@@ -13,15 +13,18 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 ## Prerequisites
 
 **Active Kali Linux VM on Hyper-V**
+
 **Administrative privileges on both Windows Host and Kali VM**
+
 **Access to the Internet**
 
 
 ## Step 1: Update and Upgrade System
 
-Open Terminal in Kali.
-Run: sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
-Clean up redundant packages: sudo apt autoremove -y && sudo apt clean
+- Open Terminal in Kali.
+Type: ```bash
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y```
+Clean up redundant packages: ```bash sudo apt autoremove -y && sudo apt clean```
 Reboot the VM to finalize updates.
 
 ## Step 2: Configure a Firewall
