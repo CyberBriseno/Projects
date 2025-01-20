@@ -79,22 +79,34 @@ This guide is to walk you through on securing your Kali Linux machine.
 
 ## Step 4: Install Intrusion Detection Tools
 
-1. Consider installing fail2ban: 
+1. **Install** `fail2ban` for automated intrusion prevention: 
     ```bash
     sudo apt install fail2ban -y
     ```
-2. Configure fail2ban:
-    ```sudo nano /etc/fail2ban/jail.conf``` to tailor settings (like bantime, maxretry).
-3. Restart fail2ban: 
-    - ```sudo systemctl restart fail2ban```
-4. *(Optional)* Incorporate IDS/IPS solutions such as Snort or Suricata.
+2. **Configure** fail2ban by editing its main configuration file:
+    ```bash
+    sudo nano /etc/fail2ban/jail.conf
+    ```
+    *(Adjust settings such as ```bantime``` and ```maxretry``` to suit your needs.)*
+3. **Restart** fail2ban to apply changes: 
+    ```bash
+    sudo systemctl restart fail2ban
+    ```
+4. *(Optional)* **Incorporate** IDS/IPS solutions such as Snort or Suricata.
 
 ## Step 5: Minimize the Attack Surface
 
-- Uninstall or disable unnecessary services:
-    - Identify running services with systemctl --type=service.
-- Stop and disable any superfluous ones.
-- Use strong passwords or key-based authentication for all accounts.
-- Keep software packages and Kali tools updated:
-    - Routinely check for new updates and apply security patches.
-- Implement secure permissions on sensitive files: chmod 600 for confidential configs containing private keys or credentials.
+1. **Uninstall** or **disable** unnecessary services:
+    - Identify running services:
+    ```bash
+    systemctl --type=service.
+    ```
+    - Stop and disable any superfluous ones.
+2. Use strong passwords or **key-based authentication** for all accounts.
+3. **Keep** software packages and Kali tools **updated**:
+    - Regularly check for new updates and apply security patches.
+4. **Implement** secure permissions on sensitive files: 
+```bash 
+chmod 600 /path/to/confidential_file
+```
+*(Example: private keys or credential storage)*
