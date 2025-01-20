@@ -4,16 +4,18 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 
 ## Table of Contents
 
-- Update and Upgrade System
-- Configure a Firewall
-Step 3: Strengthen SSH
-Step 4: Install Intrusion Detection Tools
-Step 5: Minimize the Attack Surface
-Prerequisites
-Active Kali Linux VM on Hyper-V
-Administrative privileges on both Windows Host and Kali VM
-Access to the Internet
-(Optional) Screenshots can be placed in a screenshots folder for clarity.
+- [Update and Upgrade System](#step-1-update-and-upgrade-system)
+- [Configure a Firewall]()
+- [Strengthen SSH]()
+- [Install Intrusion Detection Tools]()
+- [Minimize the Attack Surface]()
+
+## Prerequisites
+
+**Active Kali Linux VM on Hyper-V**
+**Administrative privileges on both Windows Host and Kali VM**
+**Access to the Internet**
+
 
 Step 1: Update and Upgrade System
 Open Terminal in Kali.
