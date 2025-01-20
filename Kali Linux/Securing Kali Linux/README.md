@@ -27,20 +27,34 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
     sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
     ```
 - **Remove** redundant packages once upgrade completes: 
-    - ``` sudo apt autoremove -y && sudo apt clean```
+    ```bash
+    sudo apt autoremove -y && sudo apt clean
+    ```
 - **Reboot** the VM to finalize changes:
-    - ```sudo reboot```
+    ```bash 
+    sudo reboot
+    ```
 
 ## Step 2: Configure a Firewall
 
 - Install ufw (Uncomplicated Firewall) to manage inbound/outbound traffic: 
-    - ```sudo apt install ufw -y```
+    ```bash
+    sudo apt install ufw -y
+    ```
 - Enable and configure basic rules: 
-    - ```sudo ufw default deny incoming```
-    - ```sudo ufw default allow outgoing```
-    - ```sudo ufw enable```
+    ```bash
+    sudo ufw default deny incoming
+    ```
+    ```bash
+    sudo ufw default allow outgoing
+    ```
+    ```bash
+    sudo ufw enable
+    ```
 - (Optional) Customize rules for specific services (e.g., SSH:
-    - ```sudo ufw allow ssh```
+    ```bash
+    sudo ufw allow ssh
+    ```
 
 ## Step 3: Strengthen SSH
 
