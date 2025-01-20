@@ -21,12 +21,13 @@ This guide provides concise, methodical instructions for safeguarding your Kali 
 
 ## Step 1: Update and Upgrade System
 
-- Open Terminal in Kali.
-- Type: 
+- **Open Terminal** in Kali.
+- **Execute** the following command to refresh and upgrade all packages: 
     - ```sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y```
-- Clean up redundant packages: 
+- **Remove** redundant packages once upgrade completes: 
     - ``` sudo apt autoremove -y && sudo apt clean```
-- Reboot the VM to finalize updates.
+- **Reboot** the VM to finalize changes:
+    - ```sudo reboot```
 
 ## Step 2: Configure a Firewall
 
