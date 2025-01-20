@@ -32,7 +32,7 @@ If Hyper-V is not already enabled on your Windows machine:
    - Click **OK** and wait for the features to be installed.
    - Restart your computer to apply the changes.
 
-![Download Hyper-V](./screenshots/1.%20Downloading%20Hyper-V/)
+![Download Hyper-V](./screenshots/Installing%20Kali%20Linux/1.%20Downloading%20Hyper-V/)
 
 ## Step 2: Downloading Kali Linux ISO
 
@@ -47,7 +47,7 @@ Before creating a VM, you need to download the Kali Linux ISO.
 3. **Download NetInstaller 64bit**:
     - Ensure you verify the hash once the download is complete.
 
-![Download Kali Linux ISO](./screenshots/2.%20Downloading%20Kali/)
+![Download Kali Linux ISO](./screenshots/Installing%20Kali%20Linux/2.%20Downloading%20Kali/)
 
 ## Step 3: Installing the VM
 
@@ -81,7 +81,7 @@ Before creating a VM, you need to download the Kali Linux ISO.
     - Click **Connect...**.
     - Click **Start**.
 
-![Install VM](./screenshots/3.%20Installing%20VM/)
+![Install VM](./screenshots/Installing%20Kali%20Linux/3.%20Installing%20VM/)
 
 ## Step 4: Setting up Kali
 
@@ -96,7 +96,7 @@ Before creating a VM, you need to download the Kali Linux ISO.
     - Skip proxy setup unless needed.
     - Use TAB to highlight **<Continue>** and press Enter to launch Kali.
 
-![Setting up Kali](./screenshots/4.%20Setting%20up%20Kali/)
+![Setting up Kali](./screenshots/Installing%20Kali%20Linux/4.%20Setting%20up%20Kali/)
 
 ## Step 5: Configuring Kali
 
@@ -105,4 +105,4 @@ Before creating a VM, you need to download the Kali Linux ISO.
     ```bash
     sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt clean
     ```
-![Configuring Kali](./screenshots/5.%20Configuring%20Kali/)
+![Configuring Kali](./screenshots/Installing%20Kali%20Linux/5.%20Configuring%20Kali/)
