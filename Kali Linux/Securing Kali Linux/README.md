@@ -1,10 +1,11 @@
-Securing Kali Linux in Windows
+# Securing Kali Linux in Windows
+
 This guide provides concise, methodical instructions for safeguarding your Kali Linux VM running on Windows. Follow each step meticulously to fortify your environment and ensure optimal protection.
 
-Table of Contents
-Prerequisites
-Step 1: Update and Upgrade System
-Step 2: Configure a Firewall
+## Table of Contents
+
+- Update and Upgrade System
+- Configure a Firewall
 Step 3: Strengthen SSH
 Step 4: Install Intrusion Detection Tools
 Step 5: Minimize the Attack Surface
